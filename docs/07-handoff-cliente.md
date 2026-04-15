@@ -1,32 +1,38 @@
-# 07 - Handoff para Cliente
+# 07 - Client Handoff
 
-## Entregáveis
-- Site institucional em React.
-- Blog com conteúdo vindo de planilha local.
-- Documentação operacional em `/docs`.
+## Deliverables
 
-## Como atualizar artigos (versão atual)
-1. Abrir `data/blog_posts.csv`.
-2. Inserir/editar linha seguindo o contrato de colunas.
-3. Salvar em UTF-8.
-4. Validar localmente a listagem e a página do artigo.
-5. Publicar atualização.
+- Institutional React website.
+- Blog module powered by local spreadsheet source.
+- Operational documentation under `/docs`.
 
-## Pontos de atenção
-- Não remover ou renomear colunas da planilha.
-- Não duplicar `slug`.
-- Usar `draft` para conteúdos em revisão.
-- Revisar ortografia e meta description antes de publicar.
+## How to Update Articles (Current Version)
 
-## Limites da solução temporária (planilha local)
-- Processo manual e sujeito a erro humano.
-- Sem painel editorial com permissões.
-- Escalabilidade limitada conforme volume de artigos.
+1. Open `data/blog_posts.csv`.
+2. Insert or update a row following the column contract.
+3. Save file using UTF-8 encoding.
+4. Validate list and article pages locally.
+5. Publish the update.
 
-## Próxima melhoria recomendada
-Implementar uma camada API para leitura/escrita de conteúdo com validação automática e trilha de auditoria.
+## Attention Points
 
-## Responsabilidades sugeridas
-- Responsável jurídico/editorial: aprovar conteúdo.
-- Responsável técnico: validar contrato de dados e publicação.
-- Responsável comercial: acompanhar conversões e otimizar CTA.
+- Do not remove or rename spreadsheet columns.
+- Do not duplicate `slug` values.
+- Use `draft` for content under review.
+- Review spelling and metadata before publishing.
+
+## Temporary Approach Limitations (Local Spreadsheet)
+
+- Manual flow with human-error risk.
+- No role-based editorial panel.
+- Limited scalability as article volume grows.
+
+## Recommended Next Improvement
+
+Implement an API-based content layer with automatic validation and audit trail.
+
+## Suggested Responsibilities
+
+- Legal/editorial owner: approve content quality and legal framing.
+- Technical owner: validate data contract and publication integrity.
+- Commercial owner: track conversion metrics and optimize CTAs.

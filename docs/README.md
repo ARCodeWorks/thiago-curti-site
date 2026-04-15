@@ -1,11 +1,9 @@
-# Documentação do Projeto
+# Project Documentation
 
-Projeto de site profissional em React para Thiago Curti, com blog planejado para a fase seguinte.
+This folder centralizes technical and operational decisions for development, publishing, and maintenance.
 
-## Objetivo da documentação
-Centralizar decisões técnicas e operacionais para desenvolvimento, publicação e manutenção do projeto.
+## Documentation Index
 
-## Índice
 - [00-roadmap.md](./00-roadmap.md)
 - [01-visao-produto.md](./01-visao-produto.md)
 - [02-arquitetura-react-blog.md](./02-arquitetura-react-blog.md)
@@ -15,10 +13,16 @@ Centralizar decisões técnicas e operacionais para desenvolvimento, publicaçã
 - [06-checklist-entrega.md](./06-checklist-entrega.md)
 - [07-handoff-cliente.md](./07-handoff-cliente.md)
 
-## Escopo atual
-- Fase 1 ativa: site institucional com foco em conversão para WhatsApp.
-- Fase 2 planejada: blog educativo para cliente final.
-- Fonte do blog prevista: planilha local (temporário).
+## Current Scope
 
-## Diretriz de execução
-Executar por fases: primeiro site validado e publicado; depois módulo de blog.
+- Active Phase 1: institutional website focused on WhatsApp conversion.
+- Planned Phase 2: educational blog for end clients.
+- Initial blog source: local spreadsheet/CSV (temporary approach).
+
+## Execution Guideline
+
+Delivery is incremental:
+
+1. Validate and publish the institutional website.
+2. Activate the blog module.
+3. Evolve the content data layer when scale demands it.

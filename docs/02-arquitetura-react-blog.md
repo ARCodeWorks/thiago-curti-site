@@ -1,12 +1,14 @@
-# 02 - Arquitetura React + Blog
+# 02 - React + Blog Architecture
 
-## Stack recomendada
-- React + TypeScript.
-- Vite para build e DX.
-- React Router para rotas.
-- Camada de dados isolada em `src/services`.
+## Recommended Stack
 
-## Organização de pastas (base)
+- React + TypeScript
+- Vite for build and DX
+- React Router for route-based rendering
+- Isolated data access layer under `src/services`
+
+## Suggested Folder Organization
+
 ```txt
 src/
   app/
@@ -16,7 +18,7 @@ src/
     Home/
     Blog/
     BlogPost/
-    Contato/
+    Contact/
   features/
     blog/
       components/
@@ -37,20 +39,23 @@ src/
   assets/
 ```
 
-## Princípios arquiteturais
-- Componentes visuais não acessam dados diretamente.
-- Parsing e normalização de dados centralizados em `services`.
-- Tipos compartilhados em `features/blog/types`.
-- Funções de transformação em `utils` com testes unitários.
+## Architectural Principles
 
-## Fluxo de dados do blog
-1. Ler dados da planilha local.
-2. Validar colunas obrigatórias.
-3. Normalizar para o tipo interno `BlogPost`.
-4. Entregar lista/slug para páginas do blog.
-5. Renderizar com SEO por página de artigo.
+- Visual components should not fetch data directly.
+- Parsing and normalization must live in dedicated service layers.
+- Shared types belong in `features/blog/types`.
+- Data transformation helpers should be isolated in `utils` and tested.
 
-## Estratégia de evolução
-- Fase 1: planilha local (MVP).
-- Fase 2: API intermediária com autenticação e cache.
-- Fase 3: CMS/headless ou painel editorial dedicado.
+## Blog Data Flow
+
+1. Read data from local spreadsheet (CSV).
+2. Validate required columns and formats.
+3. Normalize to internal `BlogPost` type.
+4. Provide list/slug data to blog routes.
+5. Render with article-level SEO metadata.
+
+## Evolution Strategy
+
+- Phase 1: local spreadsheet as MVP source.
+- Phase 2: intermediary API with auth and cache.
+- Phase 3: CMS/headless platform or editorial admin panel.

@@ -1,26 +1,29 @@
-# 06 - Checklist Técnico e Comercial de Entrega
+# 06 - Technical and Commercial Delivery Checklist
 
-## Técnico
-- Estrutura React organizada por domínio/feature.
-- Landing com CTA de WhatsApp funcional.
-- Blog com leitura de planilha local funcionando.
-- Slugs e páginas de artigo geradas corretamente.
-- SEO base validado (title/meta/OG/headings).
-- Responsividade validada em mobile e desktop.
-- Acessibilidade mínima validada.
-- Build de produção sem erros.
+## Technical
 
-## Conteúdo
-- Página inicial com proposta de valor clara.
-- Especialidades em ordem estratégica:
-  - Previdenciário.
-  - Trabalhista.
-  - Direito Médico e da Saúde.
-- FAQ com dúvidas reais.
-- Mínimo de 3 artigos iniciais publicados.
+- React structure organized by domain/feature.
+- Landing page with working WhatsApp CTA.
+- Blog content ingestion from local spreadsheet operational.
+- Slugs and article routes generated correctly.
+- Baseline SEO validated (`title`, `meta`, OG, headings).
+- Responsive behavior validated on mobile and desktop.
+- Minimum accessibility checks completed.
+- Production build completed without errors.
 
-## Comercial
-- CTA final claro para agendamento no WhatsApp.
-- Mensagem de contato alinhada com tom da marca.
-- Materiais de captura de lead definidos (mesmo que rascunho).
-- Responsável por atualização de conteúdo definido.
+## Content
+
+- Home page with clear value proposition.
+- Specialties presented in strategic order:
+  - Social Security
+  - Labor
+  - Medical and Health Law
+- FAQ based on real user questions.
+- At least 3 initial articles published.
+
+## Commercial
+
+- Clear final CTA for WhatsApp booking/contact.
+- Contact message aligned with brand tone.
+- Lead capture assets defined (even draft-level).
+- Clear owner assigned for content updates.

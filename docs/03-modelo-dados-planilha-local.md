@@ -1,40 +1,46 @@
-# 03 - Modelo de Dados da Planilha Local
+# 03 - Local Spreadsheet Data Model
 
 ## Status
-Fonte temporária de conteúdo do blog: planilha local.
 
-## Local esperado
-- Arquivo CSV em `data/blog_posts.csv`.
-- Encoding: UTF-8.
-- Separador: vírgula.
+Temporary source for blog content: local spreadsheet/CSV.
 
-## Contrato de colunas
-| Coluna | Obrigatória | Tipo | Exemplo | Observação |
+## Expected Location
+
+- CSV file at `data/blog_posts.csv`
+- Encoding: UTF-8
+- Delimiter: comma
+
+## Column Contract
+
+| Column | Required | Type | Example | Notes |
 |---|---|---|---|---|
-| `id` | Sim | string | `post-001` | Identificador único estável. |
-| `slug` | Sim | string | `como-reverter-negativa-auxilio-doenca` | Usado na rota do artigo. |
-| `title` | Sim | string | `Como Reverter Negativa de Auxílio-Doença` | Título principal (`h1`). |
-| `excerpt` | Sim | string | `Passos práticos para agir com segurança jurídica...` | Resumo para cards/listagem. |
-| `content_md` | Sim | string | `## Introdução ...` | Conteúdo em Markdown. |
-| `category` | Sim | string | `Previdenciário` | Categoria editorial. |
-| `keywords` | Não | string | `auxílio-doença;INSS;recurso` | Separar por `;`. |
-| `cover_image` | Não | string | `/images/blog/auxilio.jpg` | Caminho local ou URL. |
-| `meta_description` | Sim | string | `Entenda o passo a passo...` | SEO da página. |
-| `author` | Sim | string | `Thiago Curti` | Nome exibido no artigo. |
-| `published_at` | Sim | date (`YYYY-MM-DD`) | `2026-04-13` | Data de publicação. |
-| `status` | Sim | enum | `published` | Valores: `draft` ou `published`. |
+| `id` | Yes | string | `post-001` | Stable unique identifier. |
+| `slug` | Yes | string | `how-to-appeal-disability-denial` | Used in article route. |
+| `title` | Yes | string | `How to Appeal a Disability Benefit Denial` | Main page title (`h1`). |
+| `excerpt` | Yes | string | `Practical steps to act safely...` | Summary for listing cards. |
+| `content_md` | Yes | string | `## Introduction ...` | Markdown article content. |
+| `category` | Yes | string | `Social Security` | Editorial category. |
+| `keywords` | No | string | `benefit;appeal;social-security` | Delimited by `;`. |
+| `cover_image` | No | string | `/images/blog/appeal.jpg` | Local path or URL. |
+| `meta_description` | Yes | string | `Step-by-step guide...` | SEO metadata. |
+| `author` | Yes | string | `Thiago Curti` | Displayed article author. |
+| `published_at` | Yes | date (`YYYY-MM-DD`) | `2026-04-13` | Publication date. |
+| `status` | Yes | enum | `published` | Allowed values: `draft` or `published`. |
 
-## Regras de validação
-- `slug` deve ser único.
-- `title` com no máximo 70 caracteres recomendado para SEO.
-- `meta_description` entre 140 e 160 caracteres recomendado.
-- Artigos com `status=draft` não devem ser exibidos publicamente.
+## Validation Rules
 
-## Exemplo mínimo (CSV)
+- `slug` must be unique.
+- `title` should ideally be under 70 characters.
+- `meta_description` should ideally be 140-160 characters.
+- `draft` records must never be rendered publicly.
+
+## Minimal CSV Example
+
 ```csv
 id,slug,title,excerpt,content_md,category,keywords,cover_image,meta_description,author,published_at,status
-post-001,como-reverter-negativa-auxilio-doenca,Como Reverter Negativa de Auxílio-Doença,"Passos práticos para aumentar suas chances no recurso.","## Introdução\n...",Previdenciário,"auxílio-doença;INSS;recurso",/images/blog/auxilio.jpg,"Guia objetivo para agir após a negativa do benefício.",Thiago Curti,2026-04-13,published
+post-001,how-to-appeal-disability-denial,How to Appeal a Disability Benefit Denial,"Practical steps to improve your appeal outcome.","## Introduction\n...",Social Security,"benefit;appeal;social-security",/images/blog/appeal.jpg,"Objective guide on what to do after a denial.",Thiago Curti,2026-04-13,published
 ```
 
-## Observação importante
-Não alterar nomes de colunas sem atualizar a camada de parsing/normalização no código.
+## Important Note
+
+Do not rename columns without updating the parsing/normalization layer in code.

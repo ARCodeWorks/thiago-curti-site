@@ -1,34 +1,41 @@
-# 01 - Visão do Produto
+# 01 - Product Vision
 
-## Contexto
-O projeto posiciona Thiago Curti como advogado com atuação técnica e acessível, com foco em:
-- Direito Previdenciário.
-- Direito Trabalhista.
-- Direito Médico e da Saúde.
+## Context
 
-## Objetivos de negócio
-- Fortalecer autoridade digital.
-- Gerar contato qualificado via WhatsApp.
-- Construir ativo de conteúdo (blog + captação de leads).
+The project positions Thiago Curti as a lawyer with technical rigor and accessible communication, focused on:
 
-## Público prioritário
-- Médicos em situação de risco jurídico.
-- Segurados do INSS.
-- Trabalhadores de maior renda com demandas estratégicas.
+- Social Security Law
+- Labor Law
+- Medical and Health Law
 
-## Diretriz de comunicação
-- Linguagem técnica com explicação clara.
-- Foco em resolução prática de problemas.
-- Evitar juridiquês excessivo.
+## Business Goals
 
-## Diretriz de UX/UI
-- Minimalismo sofisticado.
-- Hierarquia visual forte.
-- Boa legibilidade em mobile.
-- CTA sempre visível para WhatsApp.
+- Strengthen digital authority.
+- Generate qualified WhatsApp leads.
+- Build a long-term content asset (blog + lead capture).
 
-## Métricas iniciais sugeridas
-- Cliques no CTA de WhatsApp por página.
-- Taxa de conversão de landing para contato.
-- Sessões orgânicas no blog.
-- Tempo médio por artigo.
+## Priority Audience
+
+- Doctors facing legal risk.
+- Social Security beneficiaries.
+- Higher-income professionals with strategic labor claims.
+
+## Communication Guidelines
+
+- Technical language explained with clarity.
+- Practical, action-oriented guidance.
+- Avoid excessive legal jargon.
+
+## UX/UI Guidelines
+
+- Sophisticated minimalism.
+- Strong visual hierarchy.
+- High readability on mobile.
+- WhatsApp CTA always visible and clear.
+
+## Suggested Initial Metrics
+
+- WhatsApp CTA clicks per page.
+- Landing-to-contact conversion rate.
+- Organic blog sessions.
+- Average time per article.

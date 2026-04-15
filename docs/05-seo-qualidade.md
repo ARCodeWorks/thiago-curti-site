@@ -1,32 +1,37 @@
-# 05 - SEO, Acessibilidade e Qualidade
+# 05 - SEO, Accessibility, and Quality
 
-## SEO técnico mínimo
-- `title` e `meta description` únicos por página.
-- Um `h1` por página.
-- Open Graph configurado para home e artigos.
-- URL limpa para páginas e posts.
-- Sitemap e robots configurados no deploy.
+## Minimum Technical SEO
 
-## SEO de conteúdo
-- Palavra-chave principal no título, intro e um subtítulo.
-- Interlink entre artigos e páginas de serviço.
-- Conteúdo com foco em intenção de busca transacional/informacional.
+- Unique `title` and `meta description` per page.
+- Single `h1` per page.
+- Open Graph metadata for home and article pages.
+- Clean URLs for pages and blog posts.
+- Sitemap and robots configured in deployment.
 
-## Acessibilidade
-- Contraste mínimo WCAG AA.
-- Navegação por teclado com foco visível.
-- Labels em formulários.
-- Texto alternativo em imagens relevantes.
-- Landmarks semânticos: `header`, `main`, `nav`, `section`, `footer`.
+## Content SEO
+
+- Primary keyword in title, intro, and at least one subtitle.
+- Internal links between service pages and articles.
+- Content aligned with transactional/informational intent.
+
+## Accessibility
+
+- WCAG AA minimum contrast compliance.
+- Keyboard navigation with visible focus state.
+- Proper labels for form fields.
+- Alternative text for relevant images.
+- Semantic landmarks: `header`, `main`, `nav`, `section`, `footer`.
 
 ## Performance
-- Imagens otimizadas (`webp`/`avif`).
-- Lazy loading abaixo da dobra.
-- Fontes com `font-display: swap`.
-- Evitar bibliotecas pesadas sem necessidade.
 
-## Qualidade de código
-- TypeScript estrito.
-- Lint e format no pipeline.
-- Testes para parsing da planilha e utilitários críticos.
-- Separação clara entre UI, regra de negócio e acesso a dados.
+- Optimized images (`webp`/`avif` when possible).
+- Lazy loading for below-the-fold content.
+- Fonts using `font-display: swap`.
+- Avoid heavy dependencies without clear need.
+
+## Code Quality
+
+- Strict TypeScript mode.
+- Linting and formatting in CI/local pipeline.
+- Tests for spreadsheet parsing and critical utilities.
+- Clear separation between UI, business rules, and data access.

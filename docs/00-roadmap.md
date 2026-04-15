@@ -1,60 +1,70 @@
-# 00 - Roadmap do Projeto
+# 00 - Project Roadmap
 
-## Estratégia de execução
-A implementação será incremental para reduzir risco:
-- Primeiro consolidamos o site institucional e conversão.
-- Depois ativamos o blog com planilha local.
+## Delivery Strategy
 
-## Fase 1 - Site Institucional (Agora)
+Implementation is incremental to reduce risk and avoid rework:
 
-### Objetivo
-Publicar uma landing profissional validada em conteúdo, UX e conversão.
+- First, consolidate the institutional website and conversion flow.
+- Then, activate the blog using a local spreadsheet source.
 
-### Escopo
-- Hero com proposta de valor clara.
-- Seção de especialidades em ordem estratégica.
-- Diferenciais de atuação.
-- Bloco de credibilidade.
-- FAQ com dúvidas reais.
-- CTA principal para WhatsApp.
-- Base de SEO e acessibilidade.
+## Phase 1 - Institutional Website (Current)
 
-### Critérios de pronto
-- Layout responsivo validado em mobile e desktop.
-- CTA de WhatsApp funcionando.
-- Conteúdo alinhado ao briefing do cliente.
-- Identidade visual alinhada ao `UI_UX.md`.
-- Build de produção sem erros.
+### Goal
 
-## Fase 2 - Blog (Após validação da Fase 1)
+Publish a professional landing experience validated in content, UX, and conversion.
 
-### Objetivo
-Iniciar operação editorial com artigos voltados ao cliente final.
+### Scope
 
-### Escopo
-- Listagem de artigos.
-- Página de artigo por `slug`.
-- Leitura de conteúdo via planilha local (`CSV`).
-- Camada de parsing/normalização com validação.
-- SEO por artigo.
+- Hero with clear value proposition.
+- Specialties section in strategic priority order.
+- Differentials and trust-building blocks.
+- FAQ based on real client questions.
+- Main WhatsApp CTA.
+- Baseline SEO and accessibility coverage.
 
-### Critérios de pronto
-- Contrato da planilha respeitado.
-- Fluxo de atualização documentado e testado.
-- Artigos `draft` não publicados.
+### Definition of Done
 
-## Fase 3 - Evolução de Conteúdo
+- Responsive layout validated on mobile and desktop.
+- WhatsApp CTA working correctly.
+- Content aligned with client briefing.
+- Visual direction aligned with `UI_UX.md`.
+- Production build completed without errors.
 
-### Objetivo
-Ganhar escala e reduzir operação manual.
+## Phase 2 - Blog (After Phase 1 Validation)
 
-### Escopo
-- Migração da planilha local para API intermediária.
-- Validação automática de conteúdo.
-- Observabilidade mínima de erros de publicação.
+### Goal
 
-## Ordem sugerida de entregas
-1. Aprovar versão visual e textual da landing.
-2. Publicar versão 1 do site institucional.
-3. Iniciar módulo de blog com planilha local.
-4. Planejar migração para camada de dados mais robusta.
+Start a reliable editorial operation for end clients.
+
+### Scope
+
+- Article listing page.
+- Article details page by `slug`.
+- Content ingestion from local CSV.
+- Parsing/normalization layer with validation.
+- Per-article SEO metadata support.
+
+### Definition of Done
+
+- Spreadsheet contract fully respected.
+- Update flow documented and tested.
+- `draft` articles are never publicly rendered.
+
+## Phase 3 - Content Platform Evolution
+
+### Goal
+
+Increase scale and reduce manual operational overhead.
+
+### Scope
+
+- Migrate from local spreadsheet to intermediary API.
+- Add automated content validation.
+- Add minimum publication observability and error tracking.
+
+## Recommended Delivery Sequence
+
+1. Approve final visual and messaging for the landing page.
+2. Publish institutional site v1.
+3. Launch blog module with local spreadsheet ingestion.
+4. Plan migration to a robust content data layer.

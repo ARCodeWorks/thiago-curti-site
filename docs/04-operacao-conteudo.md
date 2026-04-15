@@ -1,31 +1,36 @@
-# 04 - Operação de Conteúdo do Blog
+# 04 - Blog Content Operations
 
-## Processo editorial semanal
-1. Definir pauta com foco em dúvidas reais do cliente final.
-2. Produzir artigo curto e objetivo.
-3. Revisar clareza técnica e SEO.
-4. Publicar na planilha local com `status=published`.
-5. Validar renderização no site e compartilhamento social.
+## Weekly Editorial Workflow
 
-## Playbook de pauta
-- Priorizar temas em formato "Como resolver X".
-- Evitar textos genéricos sem aplicação prática.
-- Incluir CTA para WhatsApp no final de cada artigo.
+1. Define topic list based on real client questions.
+2. Produce short, practical, action-oriented article.
+3. Review technical clarity and SEO quality.
+4. Publish to local spreadsheet with `status=published`.
+5. Validate site rendering and social sharing preview.
 
-## Checklist por artigo
-- Título claro e orientado à intenção de busca.
-- `slug` amigável e único.
-- Introdução com promessa de valor.
-- Escaneabilidade (`h2`, listas curtas, blocos objetivos).
-- Conclusão com próximo passo do leitor.
-- Meta description preenchida.
+## Topic Playbook
 
-## Distribuição de conteúdo
-- Canais iniciais: Instagram e WhatsApp.
-- Formato de apoio: corte do artigo em microconteúdos.
-- Reforçar consistência semanal antes de ampliar canais.
+- Prioritize "How to solve X" formats.
+- Avoid generic text with no practical application.
+- Include a clear WhatsApp CTA at the end of each article.
 
-## Gestão de risco operacional
-- Manter backup versionado da planilha local.
-- Não editar o arquivo diretamente em produção sem revisão.
-- Definir responsável técnico pela publicação semanal.
+## Per-Article Checklist
+
+- Clear title aligned with search intent.
+- Unique, readable `slug`.
+- Intro with explicit value promise.
+- Scan-friendly structure (`h2`, short lists, objective blocks).
+- Closing section with next reader action.
+- `meta_description` properly filled.
+
+## Content Distribution
+
+- Initial channels: Instagram and WhatsApp.
+- Supporting format: split article into micro-content pieces.
+- Prioritize weekly consistency before expanding channels.
+
+## Operational Risk Controls
+
+- Keep versioned backups of the local spreadsheet.
+- Do not edit production content source without review.
+- Assign a technical owner for weekly publication validation.
