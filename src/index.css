@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-bg: #f5f5dc;
+  --color-bg-soft: #e8e4d9;
+  --color-surface: #ffffff;
+  --color-surface-solid: #f0ece0;
+  --color-text: #1a1a1a;
+  --color-text-soft: #4b3621;
+  --color-primary: #3e2723;
+  --color-secondary: #8e8e8e;
+  --color-accent: #b08d57;
+  --color-border: rgba(62, 39, 35, 0.2);
+  --shadow-soft: 0 10px 35px rgba(26, 26, 26, 0.08);
+  --radius: 16px;
+
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(176, 141, 87, 0.24), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(75, 54, 33, 0.14), transparent 30%),
+    var(--color-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.08;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}

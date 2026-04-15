@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #0A0A0A;
+  --color-accent: #C5A059;
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #A0A0A0;
+  --color-border-accent: rgba(197, 160, 89, 0.3);
+  --color-card-bg: rgba(255, 255, 255, 0.02);
+  --color-card-border: rgba(255, 255, 255, 0.05);
+
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-text-main bg-bg-main antialiased;
+  }
+}
