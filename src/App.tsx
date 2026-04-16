@@ -33,7 +33,11 @@ type ThemeMode = 'light' | 'dark'
 
 function App() {
   const currentPath = window.location.pathname.replace(/\/+$/, '') || '/'
-  const isKnownPath = currentPath === '/' || currentPath === '/index.html'
+  const basePath = (import.meta.env.BASE_URL.replace(/\/+$/, '') || '/')
+  const isKnownPath =
+    currentPath === basePath ||
+    currentPath === `${basePath}/index.html` ||
+    (basePath === '/' && (currentPath === '/' || currentPath === '/index.html'))
 
   const [theme, setTheme] = useState<ThemeMode>(() => {
     const savedTheme = localStorage.getItem('theme-mode')
