@@ -13,6 +13,46 @@
   --color-border: rgba(62, 39, 35, 0.2);
   --shadow-soft: 0 10px 35px rgba(26, 26, 26, 0.08);
   --radius: 16px;
+  --page-bg:
+    radial-gradient(circle at top right, rgba(176, 141, 87, 0.24), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(75, 54, 33, 0.14), transparent 30%),
+    var(--color-bg);
+  --section-light-bg: rgba(255, 255, 255, 0.45);
+  --section-dark-bg: linear-gradient(135deg, #e7dbc6 0%, #ddceb4 100%);
+  --header-bg: rgba(245, 245, 220, 0.9);
+  --header-border: rgba(62, 39, 35, 0.2);
+  --hero-bg:
+    linear-gradient(to bottom, rgba(245, 245, 220, 0.8), rgba(245, 245, 220, 0.9)),
+    url('./assets/hero/hero-floral-legal-bg.png'),
+    radial-gradient(circle at 85% 8%, rgba(176, 141, 87, 0.24), transparent 45%),
+    radial-gradient(circle at 0% 100%, rgba(62, 39, 35, 0.15), transparent 35%);
+  --faq-title: var(--color-primary);
+  --faq-subtitle: var(--color-text-soft);
+  --faq-bg: transparent;
+  --faq-border: rgba(62, 39, 35, 0.2);
+  --faq-kicker: var(--color-accent);
+  --faq-panel-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 236, 224, 0.96));
+  --faq-panel-border: rgba(62, 39, 35, 0.18);
+  --faq-panel-shadow: var(--shadow-soft);
+  --faq-panel-outline: rgba(176, 141, 87, 0.2);
+  --faq-item-border: rgba(62, 39, 35, 0.14);
+  --faq-trigger: var(--color-text);
+  --faq-trigger-open: var(--color-primary);
+  --faq-trigger-symbol: var(--color-accent);
+  --faq-answer: var(--color-text-soft);
+  --footer-bg: transparent;
+  --footer-text: rgba(62, 39, 35, 0.82);
+  --footer-border: rgba(62, 39, 35, 0.2);
+  --footer-divider: rgba(176, 141, 87, 0.28);
+  --footer-heading: var(--color-primary);
+  --footer-link: rgba(62, 39, 35, 0.82);
+  --footer-link-hover: #2c1b18;
+  --footer-bottom-border: rgba(62, 39, 35, 0.2);
+  --footer-bottom-text: rgba(62, 39, 35, 0.72);
+  --cta-text: #ffffff;
+  --cta-hover-bg: #2c1b18;
+  --cta-hover-text: #ffffff;
+  --contact-bg: var(--section-light-bg);
 
   font-family: 'Manrope', sans-serif;
   line-height: 1.5;
@@ -22,6 +62,67 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-theme='dark'] {
+  --color-bg: #101826;
+  --color-bg-soft: #162033;
+  --color-surface: #1d293f;
+  --color-surface-solid: #22324a;
+  --color-text: #e8eef8;
+  --color-text-soft: #b9c8de;
+  --color-primary: #f1c980;
+  --color-secondary: #90a5c2;
+  --color-accent: #f0c57a;
+  --color-border: rgba(211, 225, 255, 0.2);
+  --shadow-soft: 0 16px 42px rgba(3, 8, 20, 0.46);
+  --page-bg:
+    radial-gradient(circle at top right, rgba(84, 105, 145, 0.24), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(176, 141, 87, 0.16), transparent 32%),
+    linear-gradient(135deg, #101826 0%, #162033 45%, #1a2438 100%);
+  --section-light-bg: rgba(255, 255, 255, 0.04);
+  --section-dark-bg:
+    radial-gradient(circle at top left, rgba(176, 141, 87, 0.16), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(74, 97, 136, 0.18), transparent 30%),
+    linear-gradient(135deg, #101826 0%, #162033 45%, #1a2438 100%);
+  --header-bg: rgba(20, 30, 47, 0.9);
+  --header-border: rgba(211, 225, 255, 0.2);
+  --hero-bg:
+    linear-gradient(to bottom, rgba(16, 24, 38, 0.78), rgba(16, 24, 38, 0.9)),
+    url('./assets/hero/hero-floral-legal-dark.png'),
+    radial-gradient(circle at 85% 8%, rgba(176, 141, 87, 0.2), transparent 45%),
+    radial-gradient(circle at 0% 100%, rgba(84, 105, 145, 0.24), transparent 35%);
+  --faq-title: #d7dfef;
+  --faq-subtitle: rgba(209, 218, 235, 0.74);
+  --faq-bg:
+    radial-gradient(circle at 18% 18%, rgba(84, 105, 145, 0.2), transparent 40%),
+    linear-gradient(120deg, #151e2f 0%, #1d293f 50%, #1f304a 100%);
+  --faq-border: rgba(255, 255, 255, 0.06);
+  --faq-kicker: rgba(255, 198, 110, 0.94);
+  --faq-panel-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  --faq-panel-border: rgba(211, 225, 255, 0.16);
+  --faq-panel-shadow: 0 18px 44px rgba(3, 8, 20, 0.38);
+  --faq-panel-outline: rgba(255, 255, 255, 0.06);
+  --faq-item-border: rgba(209, 220, 242, 0.22);
+  --faq-trigger: rgba(240, 245, 255, 0.98);
+  --faq-trigger-open: rgba(255, 205, 122, 0.98);
+  --faq-trigger-symbol: rgba(255, 198, 110, 0.95);
+  --faq-answer: rgba(173, 188, 214, 0.84);
+  --footer-bg: var(--section-dark-bg);
+  --footer-text: rgba(210, 218, 231, 0.82);
+  --footer-border: rgba(197, 160, 89, 0.22);
+  --footer-divider: rgba(197, 160, 89, 0.28);
+  --footer-heading: #c5a059;
+  --footer-link: rgba(203, 210, 221, 0.82);
+  --footer-link-hover: #f0c57a;
+  --footer-bottom-border: rgba(255, 255, 255, 0.08);
+  --footer-bottom-text: rgba(167, 177, 193, 0.7);
+  --cta-text: #101826;
+  --cta-hover-bg: #f7d39a;
+  --cta-hover-text: #101826;
+  --contact-bg:
+    radial-gradient(circle at 15% 20%, rgba(240, 197, 122, 0.16), transparent 30%),
+    linear-gradient(135deg, rgba(84, 105, 145, 0.16), rgba(16, 24, 38, 0.14));
 }
 
 * {
@@ -47,10 +148,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top right, rgba(176, 141, 87, 0.24), transparent 35%),
-    radial-gradient(circle at bottom left, rgba(75, 54, 33, 0.14), transparent 30%),
-    var(--color-bg);
+  background: var(--page-bg);
 }
 
 h1,

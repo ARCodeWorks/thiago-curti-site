@@ -35,8 +35,11 @@ export const brand = {
 }
 
 export const contact = {
-  whatsappUrl: 'https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Thiago.%20Quero%20agendar%20uma%20reuni%C3%A3o.',
+  whatsappUrl:
+    'https://wa.me/554498753258?text=Ol%C3%A1%2C%20Dr.%20Thiago.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.%20Poderia%20me%20orientar%20sobre%20os%20pr%C3%B3ximos%20passos%3F',
   ctaLabel: 'Agendar no WhatsApp',
+  emailUrl: 'mailto:contato@thiagocurti.adv.br',
+  emailLabel: 'Enviar e-mail',
 }
 
 export const hero = {
@@ -196,8 +199,9 @@ export const footer: FooterContent = {
   ],
   supportLinks: [
     { label: 'Falar no WhatsApp', href: contact.whatsappUrl },
+    { label: 'Enviar e-mail', href: contact.emailUrl },
     { label: 'Ir para contato', href: '#contato' },
     { label: 'Perguntas frequentes', href: '#faq' },
   ],
-  legal: 'Conteúdo institucional para fins informativos. Cada caso exige análise jurídica individualizada.',
+  legal: 'OAB/PR 108.966',
 }

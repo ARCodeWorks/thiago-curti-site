@@ -7,6 +7,8 @@ type FinalCtaSectionProps = {
   finalCta: FinalCtaContent
   whatsappUrl: string
   ctaLabel: string
+  emailUrl: string
+  emailLabel: string
 }
 
 const contactHighlights = [
@@ -15,7 +17,7 @@ const contactHighlights = [
   'Condução estratégica e sem ruído',
 ]
 
-export function FinalCtaSection({ finalCta, whatsappUrl, ctaLabel }: FinalCtaSectionProps) {
+export function FinalCtaSection({ finalCta, whatsappUrl, ctaLabel, emailUrl, emailLabel }: FinalCtaSectionProps) {
   return (
     <section className="section cta-section" id="contato" aria-labelledby="contato-title">
       <div className="container contact-cta-layout">
@@ -39,6 +41,9 @@ export function FinalCtaSection({ finalCta, whatsappUrl, ctaLabel }: FinalCtaSec
           </p>
           <a className="cta-button contact-cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">
             {ctaLabel}
+          </a>
+          <a className="contact-email-button" href={emailUrl}>
+            {emailLabel}
           </a>
         </aside>
       </div>

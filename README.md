@@ -46,6 +46,10 @@ O desenvolvimento está organizado por fases para reduzir retrabalho e acelerar 
 - Seções orientadas à conversão (hero, especialidades, diferenciais, FAQ e CTA final);
 - Conteúdo centralizado em `src/data/siteContent.ts`;
 - Navegação por âncoras com foco em clareza e escaneabilidade;
+- Toggle de tema global (claro/escuro) com persistência em `localStorage`;
+- Tema aplicado em toda a interface (header, hero, seções, FAQ, contato e footer);
+- CTA de contato com dois canais no card "Próximo passo" (WhatsApp + e-mail);
+- Página 404 personalizada para rotas inválidas;
 - Estrutura de componentes reutilizáveis para evolução futura.
 
 ---
@@ -101,6 +105,14 @@ Princípios adotados:
 └── vite.config.ts
 ```
 
+Itens relevantes da estrutura atual:
+
+- `src/data/siteContent.ts`: centraliza textos, links e CTAs (incluindo WhatsApp e e-mail).
+- `src/components/layout/SiteHeader.tsx`: navbar com toggle de tema.
+- `src/components/sections/FinalCtaSection.tsx`: card "Próximo passo" com ação de WhatsApp e envio de e-mail.
+- `src/components/layout/NotFoundPage.tsx`: página 404 personalizada.
+- `src/App.tsx`: composição da landing + fallback de rota para 404.
+
 ---
 
 ## Como Executar
@@ -148,6 +160,7 @@ npm run preview
 - Conteúdo institucional baseado em briefing validado.
 - Blog planejado para operação editorial contínua.
 - Regras de qualidade e operação documentadas em `docs/`.
+- Para alterar canais de contato (WhatsApp/e-mail), atualizar `contact` em `src/data/siteContent.ts`.
 
 ---
 
