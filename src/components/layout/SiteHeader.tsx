@@ -42,6 +42,7 @@ export function SiteHeader({ logoSrc, whatsappUrl, ctaLabel }: SiteHeaderProps) 
             <li><a href="#sobre" onClick={closeMenu}>Sobre</a></li>
             <li><a href="#especialidades" onClick={closeMenu}>Especialidades</a></li>
             <li><a href="#diferenciais" onClick={closeMenu}>Diferenciais</a></li>
+            <li><a href="#credenciais" onClick={closeMenu}>Credenciais</a></li>
             <li><a href="#faq" onClick={closeMenu}>FAQ</a></li>
             <li className="nav-mobile-cta">
               <a className="cta-button cta-small" href={whatsappUrl} target="_blank" rel="noreferrer" onClick={closeMenu}>

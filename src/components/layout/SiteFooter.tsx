@@ -3,10 +3,9 @@ import type { FooterContent } from '../../data/siteContent'
 type SiteFooterProps = {
   footer: FooterContent
   brandFocus: string
-  ctaLabel: string
 }
 
-export function SiteFooter({ footer, brandFocus, ctaLabel }: SiteFooterProps) {
+export function SiteFooter({ footer, brandFocus }: SiteFooterProps) {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -20,11 +19,36 @@ export function SiteFooter({ footer, brandFocus, ctaLabel }: SiteFooterProps) {
           </div>
 
           <div className="footer-column">
+            <h3>Navegação</h3>
+            <ul>
+              {footer.navLinks.map((item) => (
+                <li key={item.label}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+              <li>
+                <a href="#inicio">Voltar ao topo</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-column">
+            <h3>Atuação</h3>
+            <ul>
+              {footer.serviceLinks.map((item) => (
+                <li key={item.label}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="footer-column">
             <h3>Contato</h3>
             <ul>
               <li>
                 <a href={footer.primaryLink} target="_blank" rel="noreferrer">
-                  {ctaLabel}
+                  Agendar no WhatsApp
                 </a>
               </li>
               {footer.supportLinks.map((item) => (
@@ -38,20 +62,6 @@ export function SiteFooter({ footer, brandFocus, ctaLabel }: SiteFooterProps) {
                   </a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h3>Links</h3>
-            <ul>
-              {footer.navLinks.map((item) => (
-                <li key={item.label}>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))}
-              <li>
-                <a href="#inicio">Voltar ao topo</a>
-              </li>
             </ul>
           </div>
         </div>

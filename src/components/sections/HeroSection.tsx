@@ -21,7 +21,7 @@ export function HeroSection({ hero, whatsappUrl, ctaLabel }: HeroSectionProps) {
           <p className="hero-subtitle">{hero.subtitle}</p>
           <p className="hero-highlight">{hero.highlight}</p>
           <div className="hero-actions">
-            <a className="cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">
+            <a className="cta-button hero-cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">
               {ctaLabel}
             </a>
             <a className="text-link" href="#especialidades">Conhecer áreas de atuação</a>

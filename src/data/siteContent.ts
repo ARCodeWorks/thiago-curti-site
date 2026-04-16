@@ -166,6 +166,11 @@ export const faq: FaqItem[] = [
     answer:
       'Aqui, o atendimento é direto com senioridade, sem repasse impessoal. A operação combina organização de controladoria com estratégia jurídica individualizada.',
   },
+  {
+    question: 'Quanto tempo leva para eu ter um posicionamento inicial sobre o meu caso?',
+    answer:
+      'Após o envio dos documentos essenciais, a análise inicial costuma ser feita com agilidade para definir cenário, risco e próximos passos com clareza.',
+  },
 ]
 
 export const finalCta = {

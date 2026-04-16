@@ -44,7 +44,7 @@ function App() {
         <FinalCtaSection finalCta={finalCta} whatsappUrl={contact.whatsappUrl} ctaLabel={contact.ctaLabel} />
       </main>
 
-      <SiteFooter footer={footer} brandFocus={brand.focus} ctaLabel={contact.ctaLabel} />
+      <SiteFooter footer={footer} brandFocus={brand.focus} />
     </>
   )
 }
