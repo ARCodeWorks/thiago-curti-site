@@ -35,9 +35,10 @@ function App() {
   const currentPath = window.location.pathname.replace(/\/+$/, '') || '/'
   const basePath = (import.meta.env.BASE_URL.replace(/\/+$/, '') || '/')
   const isKnownPath =
+    currentPath === '/' ||
+    currentPath === '/index.html' ||
     currentPath === basePath ||
-    currentPath === `${basePath}/index.html` ||
-    (basePath === '/' && (currentPath === '/' || currentPath === '/index.html'))
+    currentPath === `${basePath}/index.html`
 
   const [theme, setTheme] = useState<ThemeMode>(() => {
     const savedTheme = localStorage.getItem('theme-mode')
